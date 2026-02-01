@@ -244,3 +244,8 @@ app.listen(PORT, () => {
   console.log(`Thinking mode: ${ENABLE_THINKING_MODE ? 'ENABLED' : 'DISABLED'}`);
 });# openai-nim-proxy
 OpenAI compatible proxy for NVIDIA NIM API
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
